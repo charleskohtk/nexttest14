@@ -1,5 +1,6 @@
 {
   "AppSyncApiName": "nexttest14",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-12-14T03:46:46.852Z"
 }

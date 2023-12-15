@@ -4,10 +4,15 @@
       "dependsOn": [],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
           "defaultAuthentication": {
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
             },
             "authenticationType": "API_KEY"
           }
@@ -19,7 +24,6 @@
   },
   "hosting": {
     "amplifyhosting": {
-      "lastPushTimeStamp": "2023-12-13T18:40:47.412Z",
       "service": "amplifyhosting",
       "type": "cicd"
     }

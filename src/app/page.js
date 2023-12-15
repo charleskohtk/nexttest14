@@ -18,7 +18,8 @@ async function createTodo(formData) {
     query: mutations.createTodo,
     variables: {
       input: {
-        name: formData.get('name')?.toString() ?? ''
+        name: formData.get('name')?.toString() ?? '',
+        description: formData.get('name')?.toString() ?? ''
       }
     }
   });
@@ -47,6 +48,7 @@ export default async function Home() {
     >
       <form action={createTodo}>
         <input name="name" placeholder="Add a todo" />
+        <input name="description" placeholder="Add a description" />
         <button type="submit">Add</button>
       </form>
 
